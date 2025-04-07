@@ -1,3 +1,11 @@
+<!--
+Auteur: Anouk Jorritsma, Floris Timmermans
+Aanmaakdatum: 20-3-2025
+
+Inhoud: Footer include.
+Versie: 1.0
+-->
+
 <footer class="footer">
     <div class="footer-columns">
         <div class="footer-column">

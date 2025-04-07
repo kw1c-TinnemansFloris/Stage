@@ -1,10 +1,10 @@
 <!doctype html>
 
 <!--
-Auteur: Anouk Jorritsma
+Auteur: Anouk Jorritsma, Floris Timmermans
 Aanmaakdatum: 17-3-2025
 
-Inhoud: Include navigatie
+Inhoud: Include navigatie.
 Versie: 1.0
 -->
 
@@ -27,19 +27,19 @@ Versie: 1.0
 <body>
 <!-- nav.php en hamburger menu -->
 <nav id="topnav">
-    <a href="index.php">
-        <img src="Images/Homepage_pictures/applelogo.png" alt="logo" class="applelogo">
-    </a>
-    <ul id="buttons">
-        <li><a href="https://www.apple.com/iphone/">Iphone</a></li>
-        <li><a href="https://www.apple.com/mac/">Mac</a></li>
-        <li><a href="https://www.apple.com/airpods/">Airpods</a></li>
-        <li><a href="https://www.apple.com/watch/">Watch</a></li>
-        <li><a href="https://support.apple.com/?cid=gn-ols-home-hp-tab">Support</a></li>
-        <li><a href="submaps/vragenlijst.php">Survey</a></li>
-    </ul>
+        <a href="index.php">
+            <img src="Images/Homepage_pictures/applelogo.png" alt="logo" class="applelogo">
+        </a>
+        <ul id="buttons">
+            <li><a href="https://www.apple.com/iphone/">Iphone</a></li>
+            <li><a href="https://www.apple.com/mac/">Mac</a></li>
+            <li><a href="https://www.apple.com/airpods/">Airpods</a></li>
+            <li><a href="https://www.apple.com/watch/">Watch</a></li>
+            <li><a href="https://support.apple.com/?cid=gn-ols-home-hp-tab">Support</a></li>
+            <li><a href="submaps/vragenlijst.php">Survey</a></li>
+        </ul>
 
-    <!-- HAMBURGER MENU (NIET ZELF GEMAAKT) -->
+<!-- HAMBURGER MENU (NIET ZELF GEMAAKT) -->
     <div id="HamburgerMenu">
         <div id="menuToggle">
             <!--

@@ -1,8 +1,8 @@
 /*
-Auteur: Anouk, Floris, Shania
+Auteur: Anouk Jorritsma, Floris Timmermans
 Aanmaakdatum: 20-3-2025
 
-Inhoud: Stylesheet pagina's
+Inhoud: Stylesheet pagina's.
 Versie: 1.0
 */
 
@@ -168,27 +168,31 @@ main
     margin: 10px;
 }
 
-/* Specifieke achtergronden voor container4 en container5 */
+/*Image voor achtergrond*/
 .background-container5
 {
     background-image: url('../Images/Ipad/hero_ipad_air__enn6321t3tkm_small_2.jpg');
 }
 
+/*Image voor achtergrond*/
 .background-container4
 {
     background-image: url('../Images/Macbook/hero_macbook_air_avail__fpm99qgohx2e_small.jpg');
 }
 
+/*Image voor achtergrond*/
 .background-container6
 {
     background-image: url('../Images/Trade_In/promo_iphone_tradein__bugw15ka691e_small.jpg');
 }
 
+/*Image voor achtergrond*/
 .background-container7
 {
     background-image: url('../Images/AppleCard/promo_apple_card__5cm7draujpey_medium.jpg');
 }
 
+/*Margin voor ipad foto*/
 #ipadpng
 {
     margin-top: 50px;
@@ -207,10 +211,11 @@ main
     margin: 30px auto;
 }
 
-.main-div  { height: 250px; }
-.main-div2 { height: 260px; margin-top: 15px; margin-bottom: 50px; }
+/*Hoogte en margin geven aan verschillende tekst vlakken*/
+.main-div  { height: 260px; color: #333333;}
+.main-div2 { height: 320px; margin-top: 15px; margin-bottom: 50px; }
 .main-div3 { height: 200px; margin-top: 15px; margin-bottom: 50px; }
-.main-div4 { height: 550px; margin-top: 15px; margin-bottom: 50px; }
+.main-div4 { height: 530px; margin-top: 15px; margin-bottom: 50px; }
 
 /* Algemene button styling */
 button, .ButtonHome, .ButtonHome2, .ButtonKlein, #START, #Versturen
@@ -225,24 +230,13 @@ button, .ButtonHome, .ButtonHome2, .ButtonKlein, #START, #Versturen
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.resultaten
-{
-    width: 80%; /* Pas de breedte naar wens aan */
-    max-width: 800px; /* Maximaal 800px breed */
-    margin: 0 auto; /* Horizontaal centreren */
-    text-align: center; /* Zorg ervoor dat de tekst en afbeelding binnenin gecentreerd zijn */
-    padding: 20px; /* Optioneel, voor wat ruimte rondom de inhoud */
-}
-
 /* Specifieke button stijlen */
-#START, .ButtonHome
+.ButtonHome
 {
     border-radius: 90px;
     padding: 15px;
     font-size: 16px;
 }
-
-#START { margin-left: 450px; }
 
 #Versturen
 {
@@ -294,7 +288,7 @@ input[type='radio']:checked:after
     padding: 40px 10%;
     font-size: 14px;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 35px;
+    margin-top: 70px;
 }
 
 /*Zorgt dat het van links naar rechts langs elkaar staat*/
@@ -367,7 +361,7 @@ input[type='radio']:checked:after
 }
 
 /* Styles van de text */
-.Text-vragenlijst { margin-left: 20px; }
+.Text-vragenlijst { margin-left: 20px;color: #333333; }
 .Text-Iphone { font-size: xxx-large; }
 
 /*Zorgt ervoor dat je het hamburger menu niet ziet op desktop*/
@@ -384,18 +378,20 @@ input[type='radio']:checked:after
 /*Zorgt dat het in het midden komt de staan de image van de iarpods 4 acn*/
 .Airpods
 {
-    height: 240px;
+    height: 290px;
     width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 /*dat de text in het midden staat*/
 .main-div4
 {
     text-align: center;
+    color: #333333;
 }
 
 /*Dat de button een beetje witruimte moven heeft staan*/
@@ -403,3 +399,36 @@ input[type='radio']:checked:after
 {
     margin-top: 10px;
 }
+
+/*Positie*/
+.HalloNaam
+{
+    text-align: center;
+    margin: 0px;
+    color: #333333;
+}
+
+/*Positie*/
+.name-input, #Good
+{
+    margin-left: 20px;
+    color: #333333;
+}
+
+/*Zorgt dat de text in her midden staat*/
+.TekstResultaat
+{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

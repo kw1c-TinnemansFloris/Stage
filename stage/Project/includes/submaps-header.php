@@ -1,11 +1,10 @@
-
 <!doctype html>
 
 <!--
 Auteur: Anouk Jorritsma
 Aanmaakdatum: 17-3-2025
 
-Inhoud: Include navigatie
+Inhoud: Include navigatie.
 Versie: 1.0
 -->
 

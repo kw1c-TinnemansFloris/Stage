@@ -1,9 +1,8 @@
-
 /*
-Auteur: Anouk Jorritsma
+Auteur: Anouk Jorritsma, Floris Timmermans
 Aanmaakdatum: 17-3-2025
 
-Inhoud: Responsive maken van de pagina
+Inhoud: Responsive maken van de pagina.
 Versie: 1.0
 */
 
@@ -13,9 +12,29 @@ Versie: 1.0
     /*Tekstvlak een andere grootte/breedte geven en andere margin*/
     .main-div
     {
-        height: 230px;
-        width: 250px;;
+        height: 400px;
+        width: auto;
         margin: 50px 100px 0px 100px;
+    }
+
+    /*Breedte en hoogte van het begin blok bij de vragenlijst*/
+    .main-div2
+    {
+        width: auto;
+        height: auto;
+    }
+
+    /*Resultaat pagina hoogte en breedte*/
+    .main-div4
+    {
+        width: auto;
+        height: 550px;
+    }
+
+    /*Positioneren versturen button*/
+    #Versturen
+    {
+        margin-top: 100px;
     }
 
     /*Andere image iphone 16 pro*/
@@ -260,7 +279,7 @@ Versie: 1.0
 
         transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
-        /*-------------------EINDE HAMBURGER MENU----------------------------*/
+    /*-------------------EINDE HAMBURGER MENU----------------------------*/
     }
 
     #menu li
@@ -320,3 +339,4 @@ Versie: 1.0
         margin-top: 10px;
     }
 }
+

@@ -11,7 +11,7 @@ if (!isset($_POST['vraag1'])) {
 $datumTijd = date("d-m-Y H:i:s");
 
 // Verkrijg de naam uit de sessie
-$naam = $_SESSION['naam'];
+$naam = $_SESSION[''];
 
 // krijg de antwoorden uit de sessie
 $vraag1 = $_POST['vraag1'];
@@ -40,21 +40,26 @@ if ($totaalscore >= 195) {
     $advies = 'Airpods Max';
     $image = '../Images/Airpods/Airpods_Max.png';
     $link = 'https://www.apple.com/nl/airpods-max/';
+    $link2 ='https://www.apple.com/nl/shop/buy-airpods/airpods-max';
 } elseif ($totaalscore >= 150) {
     $advies = 'Airpods pro 2';
     $image = '../Images/Airpods/Airpods_Pro_2.png';
     $link = 'https://www.apple.com/nl/airpods-pro/';
+    $link2 ='https://www.apple.com/nl/shop/buy-airpods/airpods-pro-2';
 } elseif ($totaalscore >= 100) {
     $advies = 'Airpods 4';
     $image = '../Images/Airpods/Airpods4.png';
     $link = 'https://www.apple.com/nl/airpods/';
+    $link2 ='https://www.apple.com/nl/shop/buy-airpods/airpods-4';
 } else {
     $advies = 'Airpods 4 No Noise Canceling';
     $image = '../Images/Airpods/Airpods4_No_Noise.png';
     $link = 'https://www.apple.com/nl/airpods/';
+    $link2 = 'https://www.apple.com/nl/shop/buy-airpods/airpods-4';
 }
 $_SESSION['image'] = $image;
 $_SESSION['link'] = $link;
+$_SESSION['link2'] = $link2;
 
 // Definieer de maximale score
 $maximaleScore = 195;
@@ -73,34 +78,47 @@ $_SESSION['advies'] = $advies;
 Auteur: Anouk Jorritsma, Floris Tinnemans
 Aanmaakdatum: 20-3-2025
 
-Inhoud: HTML Project, startpagina
+Inhoud: HTML Project, startpagina.
 Versie: 1.0
 -->
 <html>
-    <head>
-        <title>Apple</title>
-        <link rel="icon" type="image/x-icon" href="../Images/Homepage_pictures/favicon-32x32.png">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/stylesheet.css">
-        <link rel="stylesheet" href="../styles/stylesheet2.css">
-        <script src="../scripts/scripts.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <?php include('../includes/submaps-header.php'); ?>
-        </header>
-        <main>
-            <div class="resultaten">
-            <h2>Hello, <?php echo $_SESSION['naam']; ?>!</h2>
-            <p>Your total score is: <?php echo $_SESSION['totaalscore']; ?></p>
-            <h1>We advise you the : <?php echo $_SESSION['advies']; ?> </h1>
-            <h3>For more information on this product, Go to: <a href="<?php echo $_SESSION['link']; ?>" target="_blank"><?php echo $_SESSION['link']; ?></a></h3>
-            <p>The current time is: <?php echo $datumTijd; ?></p>
+<head>
+<!--    Title    -->
+    <title>Apple</title>
+    <link rel="icon" type="image/x-icon" href="../Images/Homepage_pictures/favicon-32x32.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    Link naar css -->
+    <link rel="stylesheet" href="../styles/stylesheet.css">
+<!--    Link naar css -->
+    <link rel="stylesheet" href="../styles/stylesheet2.css">
+<!--  Link naar JavaScript  -->
+    <script src="../scripts/scripts.js" defer></script>
+</head>
+<body>
+<!--Header include van de navigatie-->
+<header>
+    <?php include('../includes/submaps-header.php'); ?>
+</header>
+<main>
+    <div class="TekstResultaat">
+        <h2>Hello, <?php echo $_SESSION['naam']; ?>!</h2>
+        <p>The current time is: <?php echo $datumTijd; ?></p>
+    </div>
+    <div class="main-div4">
+        <h1> <?php echo $_SESSION['advies']; ?> </h1>
+        <p>Total Score: <?php echo $_SESSION['totaalscore']; ?></p>
+        <div>
+<!-- Verschil in punten -->
             <p>Difference between the  maximum score: <?php echo $verschil; ?> points.</p>
-            <img src="<?php echo $_SESSION['image']; ?>" alt="img" />
-            </div>
-        </main>
-        <?php include('../includes/submaps-footer.php'); ?>
-    </body>
+            <img class="Airpods" src="<?php echo $_SESSION['image']; ?>" alt="img" />
+<!--       Button naar more en naar buy uit php sync met het resultaat         -->
+            <a  class="ButtonKlein" href="<?php echo $link; ?>" style="margin-top: 10px;">More..</a>
+            <a  class="ButtonKlein" href="<?php echo $link2; ?>" style="margin-top: 10px;">Buy</a>
+
+        </div>
+    </div>
+</main>
+<?php include('../includes/submaps-footer.php'); ?>
+</body>
 </html>
