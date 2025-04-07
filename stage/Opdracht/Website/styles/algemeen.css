@@ -1,0 +1,90 @@
+/*Naam: Floris Tinnemans*!*/
+/*!*Datum: 20 februari*!*/
+/*!*Beschrijving: Dit is de stylesheet van de zelftest- en de homepagina *!*/
+
+
+body
+{
+    /* Stelt het lettertype in voor de hele pagina */
+    font-family: 'Lato', sans-serif;
+}
+
+.logo
+{
+    display: flex;
+    /* logo-afbeelding horizontaal */
+    justify-content: center;
+    align-items: center;
+}
+
+ul
+{
+    /* Verwijdert standaard tekens */
+    list-style-type: none;
+    /* Verwijdert standaard padding */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    /* Dunne zwarte lijn bovenaan */
+    border-top: 0.1px solid #000000;
+    /* Dunne zwarte lijn onderaan */
+    border-bottom: 0.1px solid #000000;
+    /* Geen linker rand */
+    border-left: 0;
+    /* Geen rechter rand */
+    border-right: 0;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a
+{
+    /* Verwijdert onderstreping van links */
+    text-decoration: none;
+    /* Stelt de tekstkleur in op zwart */
+    color: black;
+    /* Ruimte rond de linktekst */
+    padding: 22px;
+    /* Tekstgrootte */
+    font-size: 12px;
+    /* Maakt de tekst vetgedrukt */
+    font-weight: 700;
+}
+
+nav a:hover
+{
+    /* Onderstreept de link bij hover */
+    text-decoration: underline;
+    /* Onderstreping in zwart */
+    text-decoration-color: #000000;
+    /* Dikkere onderstreping */
+    text-decoration-thickness: 2.5px;
+}
+
+/* Media query voor kleinere schermen */
+@media (max-width: 768px)
+{
+    .logo img
+    {
+        /* Verkleint het logo op kleinere schermen */
+        max-width: 100px;
+    }
+
+    ul
+    {
+        /* Zet de navigatielinks onder elkaar */
+        flex-direction: column;
+        /* Zorgt dat de navigatie de volledige breedte gebruikt */
+        width: 100%;
+        padding-top: 0;
+    }
+
+    a
+    {
+        /* Vermindert de padding */
+        padding: 15px;
+        /* Iets grotere tekst voor leesbaarheid */
+        font-size: 14px;
+    }
+}

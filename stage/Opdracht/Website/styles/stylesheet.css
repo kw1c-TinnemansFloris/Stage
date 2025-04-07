@@ -1,0 +1,91 @@
+/*Naam: Floris Tinnemans*/
+/*Datum: 20 februari*/
+/*Beschrijving: Dit is de stylesheet van de homepagina*/
+
+
+.container
+{
+    /* Beperkt de breedte */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Ruimte binnen de container */
+    padding: 20px;
+}
+
+.articles
+{
+    display: flex;
+    /* Verdeel artikelen gelijk */
+    justify-content: space-between;
+    /* Ruimte tussen artikelen */
+    gap: 20px;
+    /* Artikelen op een nieuwe regel bij kleine schermen */
+    flex-wrap: wrap;
+}
+
+.article
+{
+    /* Grijze rand */
+    border: 1px solid #ddd;
+    /* Ruimte binnen de box */
+    padding: 20px;
+    /* Elke article neemt 30% van de rij in */
+    width: 30%;
+    border-radius: 8px;
+    border-width: 8px;
+    /* Groene rand */
+    border-color: rgb(76, 201, 164);
+}
+
+p
+{
+    text-align: center;
+}
+
+h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.startfoto
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.startfoto img
+{
+    height: 400px;  /* Stelt een vaste hoogte in voor de afbeelding */
+    max-width: 100%;  /* Voorkomt dat de afbeelding te groot wordt */
+    object-fit: cover;  /* Zorgt ervoor dat de afbeelding netjes wordt bijgesneden */
+}
+
+button
+{
+    width: 200px;
+    /* Hoogte van de knop */
+    height: 60px;
+    /* Ruimte binnen de knop */
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #0096ff;
+    color: white;
+    /* Geen rand */
+    border: none;
+    /* Verandert de muisaanwijzer in een handje */
+    cursor: pointer;
+}
+
+/* Media query voor kleinere schermen */
+@media (max-width: 768px) {
+    .article
+    {
+        /* Artikelen nemen de volledige breedte in op kleine schermen */
+        width: 100%;
+    }
+}

@@ -1,0 +1,405 @@
+/*
+Auteur: Anouk, Floris, Shania
+Aanmaakdatum: 20-3-2025
+
+Inhoud: Stylesheet pagina's
+Versie: 1.0
+*/
+
+/* Onnodige margin weghalen en een font geven aan de pagina */
+html, body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Body margin en padding weghalen */
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    margin-top: 50px;
+    color: #333333;
+}
+
+/* De navigatiebalk aan de bovenkant een opmaak geven */
+#topnav
+{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(244, 245, 246, 0.8); /* Transparante achtergrondkleur */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(116, 116, 116, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+/* Logo van apple een positie en formaat geven */
+.applelogo
+{
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* Navigatiemenu (UL) opmaak en uitlijning */
+ul
+{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Stijl en positionering van de navigatie-items */
+li
+{
+    margin-right: 20px;
+}
+
+/*Opmaak li a */
+li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Padding en margin weghalen van de main */
+main
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Opmaak background container*/
+.background-container, .background-container2, .background-container3
+{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Opmaak background container*/
+.background-container8
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+/*Margin voor de text*/
+.Text-Airpods
+{
+    margin-top: 300px;
+}
+
+/* Specifieke achtergronden */
+.background-container
+{
+    background-image: url('../Images/Iphone16_PRO/hero_iphone16pro_avail__fnf0f9x70jiy_large.jpg');
+    color: white;
+}
+
+.background-container2
+{
+    margin-top: 13px;
+    background-image: url('../Images/Iphone16/hero_iphone16_avail__euwzls69btea_large.jpg');
+    color: white;
+}
+
+.background-container3
+{
+    margin-top: 13px;
+    background-image: url('../Images/AppleWatch/hero_apple_watch_series_10_avail_lte__esu66gaw6dci_large.jpg');
+    color: #333333;
+}
+
+/* Specifieke achtergronden */
+.background-container8
+{
+    background-image: url('../Images/AirpodsSurvey/promo_airpods_pro_2_avail__vkitqi3okwie_large_2x.jpg');
+    color: white;
+}
+
+.background-wrapper, .background-wrapper2
+{
+    display: flex;
+    width: 100%;
+    gap: 0; /* Geen ruimte tussen de containers */
+}
+
+/* Stijl voor de iPad en MacBook containers */
+.background-container4, .background-container5, .background-container6, .background-container7
+{
+    flex: 1;
+    height: 80vh;
+    background-size: cover; /* Zorgt ervoor dat de afbeelding de hele container vult */
+    background-position: center; /* Centreert de afbeelding */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    margin: 10px;
+}
+
+/* Specifieke achtergronden voor container4 en container5 */
+.background-container5
+{
+    background-image: url('../Images/Ipad/hero_ipad_air__enn6321t3tkm_small_2.jpg');
+}
+
+.background-container4
+{
+    background-image: url('../Images/Macbook/hero_macbook_air_avail__fpm99qgohx2e_small.jpg');
+}
+
+.background-container6
+{
+    background-image: url('../Images/Trade_In/promo_iphone_tradein__bugw15ka691e_small.jpg');
+}
+
+.background-container7
+{
+    background-image: url('../Images/AppleCard/promo_apple_card__5cm7draujpey_medium.jpg');
+}
+
+#ipadpng
+{
+    margin-top: 50px;
+}
+
+/* Algemene styling voor divs */
+.main-div, .main-div2, .main-div3, .main-div4
+{
+    color: black;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    font-size: large;
+    width: 1000px;
+    margin: 30px auto;
+}
+
+.main-div  { height: 250px; }
+.main-div2 { height: 260px; margin-top: 15px; margin-bottom: 50px; }
+.main-div3 { height: 200px; margin-top: 15px; margin-bottom: 50px; }
+.main-div4 { height: 550px; margin-top: 15px; margin-bottom: 50px; }
+
+/* Algemene button styling */
+button, .ButtonHome, .ButtonHome2, .ButtonKlein, #START, #Versturen
+{
+    margin: 5px;
+    background-color: #0070E2;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resultaten
+{
+    width: 80%; /* Pas de breedte naar wens aan */
+    max-width: 800px; /* Maximaal 800px breed */
+    margin: 0 auto; /* Horizontaal centreren */
+    text-align: center; /* Zorg ervoor dat de tekst en afbeelding binnenin gecentreerd zijn */
+    padding: 20px; /* Optioneel, voor wat ruimte rondom de inhoud */
+}
+
+/* Specifieke button stijlen */
+#START, .ButtonHome
+{
+    border-radius: 90px;
+    padding: 15px;
+    font-size: 16px;
+}
+
+#START { margin-left: 450px; }
+
+#Versturen
+{
+    display: block;
+    border-radius: 90px;
+    padding: 15px;
+    font-size: 16px;
+    margin: 50px auto 0;
+    width: fit-content;
+}
+
+.ButtonHome2, .ButtonKlein
+{
+    border-radius: 50px;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* Hover effect voor knoppen */
+button:hover, .ButtonHome:hover, .ButtonHome2:hover, .ButtonKlein:hover
+{
+    transform: scale(1.05);
+}
+
+/* Radio button styling */
+input[type='radio']:checked:after
+{
+    width: 13px;
+    height: 13px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #0070E2;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid gray;
+}
+
+/* Vragenlijst styling */
+#vragenlijst
+{
+    margin: 20px auto;
+}
+
+.footer
+{
+    background: #f5f5f7;
+    padding: 40px 10%;
+    font-size: 14px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 35px;
+}
+
+/*Zorgt dat het van links naar rechts langs elkaar staat*/
+.footer-columns
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*footer collom grootte*/
+.footer-column
+{
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 30px;
+}
+
+/*Geeft margin en een font grootte van de footer*/
+.footer-column h4
+{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/*Laat alles onder elkaar staan*/
+.footer-column ul
+{
+    display: block;
+}
+
+/*Witruimte*/
+.footer-column ul li
+{
+    margin-bottom: 8px;
+}
+
+/*Opmaak footer text*/
+.footer-column ul li a
+{
+    color: #666;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+/*Opmaak voor de text onder de lijn copyright enzo*/
+.footer-bottom
+{
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Coming Soon stijl */
+.ComingSoon
+{
+    background-color: #0070E2;
+    color: white;
+    text-align: center;
+    display: block;
+    border-radius: 50px;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin: 0 auto;
+    width: fit-content;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles van de text */
+.Text-vragenlijst { margin-left: 20px; }
+.Text-Iphone { font-size: xxx-large; }
+
+/*Zorgt ervoor dat je het hamburger menu niet ziet op desktop*/
+#HamburgerMenu { display: none; }
+
+/*Kleur van de vraag bij de survey*/
+.vragen_kleur
+{
+    color: gray;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/*Zorgt dat het in het midden komt de staan de image van de iarpods 4 acn*/
+.Airpods
+{
+    height: 240px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+/*dat de text in het midden staat*/
+.main-div4
+{
+    text-align: center;
+}
+
+/*Dat de button een beetje witruimte moven heeft staan*/
+.button-container
+{
+    margin-top: 10px;
+}

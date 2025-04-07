@@ -1,0 +1,322 @@
+
+/*
+Auteur: Anouk Jorritsma
+Aanmaakdatum: 17-3-2025
+
+Inhoud: Responsive maken van de pagina
+Versie: 1.0
+*/
+
+/*@media-query gemaakt voor de iphone 14 pro max*/
+@media (max-width: 768px)
+{
+    /*Tekstvlak een andere grootte/breedte geven en andere margin*/
+    .main-div
+    {
+        height: 230px;
+        width: 250px;;
+        margin: 50px 100px 0px 100px;
+    }
+
+    /*Andere image iphone 16 pro*/
+    .background-container
+    {
+        background-image: url('../Images/Iphone16_PRO/hero_iphone16pro_avail__fnf0f9x70jiy_small.jpg');
+        color: white;
+    }
+
+    /*Andere image iphone 16*/
+    .background-container2
+    {
+        margin-top: 13px;
+        background-image: url('../Images/Iphone16/hero_iphone16_avail__euwzls69btea_small.jpg');
+        color: white;
+    }
+
+    /*Andere image apple watch*/
+    .background-container3
+    {
+        margin-top: 13px;
+        background-image: url('../Images/AppleWatch/promo_apple_watch_series_10_avail_lte__c70y29goir42_small.jpg');
+        color: black;
+    }
+
+    /*Andere image survey*/
+    .background-container8
+    {
+        margin: 0px;
+        padding: 0px;
+        background-image: url('../Images/AirpodsSurvey/promo_airpods_pro_2_avail__vkitqi3okwie_medium.jpg');
+        color: black;
+    }
+
+    /*Text van de iphone 15 pro positioneren*/
+    .Iphone16PRO
+    {
+        margin-top: 500px;
+    }
+
+    /*Button positioneren*/
+    .ButtonHome2
+    {
+        margin-top: 10px;
+    }
+
+    /*Navigatie weg*/
+    #buttons
+    {
+        display: none;
+    }
+
+    /*Font size van iphone*/
+    .Text-Iphone
+    {
+        font-size: xx-large;
+    }
+
+    /*Kleur van de text*/
+    .background-wrapper2, .background-wrapper
+    {
+        color: #333333;
+    }
+
+    /*Positie en kleur van de text*/
+    .Text-Iphone2
+    {
+        margin-top: 200px;
+        color: white;
+    }
+
+    /*Text van de airpods positie en opmaak*/
+    .Text-Airpods
+    {
+        margin: 100px;
+        color: white;
+        font-weight: lighter;
+    }
+
+    /*--------------------BEGIN HAMBURGER MENU (NIET ZELF GEMAAKT)----------------------*/
+    #HamburgerMenu
+    {
+        display: block;
+    }
+
+    body
+    {
+        margin: 0;
+        padding: 0;
+
+        /* make it look decent enough */
+        color: #cdcdcd;
+        font-family: "Avenir Next", "Avenir", sans-serif;
+    }
+
+    main
+    {
+        width: 100%;
+        max-width: 680px;
+        margin: 50px auto;
+    }
+
+    p
+    {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    *
+    {
+        scroll-behavior: smooth;
+    }
+
+    /* Menu code starts here */
+
+    #menuToggle
+    {
+        /* You can also use relative/absolute here if you want to stay on the top */
+        position: fixed;
+        top: 15px;
+        left: 15px;
+
+        z-index: 1;
+
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle a
+    {
+        text-decoration: none;
+        color: #232323;
+
+        transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover
+    {
+        color: tomato;
+    }
+
+
+    #menuToggle input
+    {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0; /* hide this */
+        z-index: 2; /* and place it over the hamburger */
+
+        -webkit-touch-callout: none;
+    }
+
+    /*
+     * Just a quick hamburger
+     */
+    #menuToggle span
+    {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: black;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child
+    {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+        transform-origin: 0% 100%;
+    }
+
+    /*
+     * Transform all the slices of hamburger
+     * into a crossmark.
+     */
+    #menuToggle input:checked ~ span
+    {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    /*
+     * But let's hide the middle one.
+     */
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+     * Ohyeah and the last one should go the other direction
+     */
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    /*
+     * Make this absolute positioned
+     * at the top left of the screen
+     */
+    #menu
+    {
+        position: absolute;
+        width: 120vw;
+        max-height: 100vh;
+        margin: -100px 0 0 -50px;
+        padding: 40px;
+        padding-top: 100px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        background: #ededed;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+        /*-------------------EINDE HAMBURGER MENU----------------------------*/
+    }
+
+    #menu li
+    {
+        font-size: 28px;
+    }
+
+    #menu li label
+    {
+        cursor: pointer;
+    }
+
+    /*
+     * And let's slide it in from the left
+     */
+    #menuToggle input:checked ~ ul
+    {
+        transform: none;
+    }
+}
+
+
+
+/*Responsive maken van de ipad*/
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+    /*Andere image iphone 16 pro*/
+    .background-container
+    {
+        background-image: url('../Images/Iphone16_PRO/hero_iphone16pro_avail__fnf0f9x70jiy_small_2x.jpg');
+        color: white;
+    }
+
+    /*Andere image iphone 16*/
+    .background-container2
+    {
+        margin-top: 13px;
+        background-image: url('../Images/Iphone16/hero_iphone16_avail__euwzls69btea_small_2x.jpg');
+        color: white;
+    }
+
+    /*Andere image apple watch*/
+    .background-container3
+    {
+        margin-top: 13px;
+        background-image: url('../Images/AppleWatch/promo_apple_watch_series_10_avail_lte__c70y29goir42_small_2x.jpg');
+        color: black;
+    }
+    .Iphone16PRO
+    {
+        margin-top: 700px;
+    }
+
+    .ButtonHome2
+    {
+        margin-top: 10px;
+    }
+}
