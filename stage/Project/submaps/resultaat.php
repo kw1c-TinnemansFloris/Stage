@@ -1,3 +1,12 @@
+<!--
+Auteur: Anouk Jorritsma, Floris Tinnemans
+Aanmaakdatum: 20-3-2025
+
+Inhoud: HTML Project, startpagina.
+Versie: 1.0
+-->
+
+
 <?php
 session_start(); // Start de sessie
 
@@ -74,51 +83,44 @@ $_SESSION['advies'] = $advies;
 ?>
 
 <!doctype html>
-<!--
-Auteur: Anouk Jorritsma, Floris Tinnemans
-Aanmaakdatum: 20-3-2025
-
-Inhoud: HTML Project, startpagina.
-Versie: 1.0
--->
 <html>
-<head>
-<!--    Title    -->
-    <title>Apple</title>
-    <link rel="icon" type="image/x-icon" href="../Images/Homepage_pictures/favicon-32x32.png">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    Link naar css -->
-    <link rel="stylesheet" href="../styles/stylesheet.css">
-<!--    Link naar css -->
-    <link rel="stylesheet" href="../styles/stylesheet2.css">
-<!--  Link naar JavaScript  -->
-    <script src="../scripts/scripts.js" defer></script>
-</head>
-<body>
-<!--Header include van de navigatie-->
-<header>
-    <?php include('../includes/submaps-header.php'); ?>
-</header>
-<main>
-    <div class="TekstResultaat">
-        <h2>Hello, <?php echo $_SESSION['naam']; ?>!</h2>
-        <p>The current time is: <?php echo $datumTijd; ?></p>
-    </div>
-    <div class="main-div4">
-        <h1> <?php echo $_SESSION['advies']; ?> </h1>
-        <p>Total Score: <?php echo $_SESSION['totaalscore']; ?></p>
-        <div>
-<!-- Verschil in punten -->
-            <p>Difference between the  maximum score: <?php echo $verschil; ?> points.</p>
-            <img class="Airpods" src="<?php echo $_SESSION['image']; ?>" alt="img" />
-<!--       Button naar more en naar buy uit php sync met het resultaat         -->
-            <a  class="ButtonKlein" href="<?php echo $link; ?>" style="margin-top: 10px;">More..</a>
-            <a  class="ButtonKlein" href="<?php echo $link2; ?>" style="margin-top: 10px;">Buy</a>
+    <head>
+    <!--    Title    -->
+        <title>Apple</title>
+        <link rel="icon" type="image/x-icon" href="../Images/Homepage_pictures/favicon-32x32.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    Link naar css -->
+        <link rel="stylesheet" href="../styles/stylesheet.css">
+    <!--    Link naar css -->
+        <link rel="stylesheet" href="../styles/stylesheet2.css">
+    <!--  Link naar JavaScript  -->
+        <script src="../scripts/scripts.js" defer></script>
+    </head>
+    <body>
+    <!--Header include van de navigatie-->
+    <header>
+        <?php include('../includes/submaps-header.php'); ?>
+    </header>
+        <main>
+            <div class="TekstResultaat">
+                <h2>Hello, <?php echo $_SESSION['naam']; ?>!</h2>
+                <p>The current time is: <?php echo $datumTijd; ?></p>
+            </div>
+            <div class="main-div4">
+                <h1> <?php echo $_SESSION['advies']; ?> </h1>
+                <p>Total Score: <?php echo $_SESSION['totaalscore']; ?></p>
+                <div>
+        <!-- Verschil in punten -->
+                    <p>Difference between the  maximum score: <?php echo $verschil; ?> points.</p>
+                    <img class="Airpods" src="<?php echo $_SESSION['image']; ?>" alt="img" />
+        <!--       Button naar more en naar buy uit php sync met het resultaat         -->
+                    <a  class="ButtonKlein" href="<?php echo $link; ?>" style="margin-top: 10px;">More..</a>
+                    <a  class="ButtonKlein" href="<?php echo $link2; ?>" style="margin-top: 10px;">Buy</a>
 
-        </div>
-    </div>
-</main>
-<?php include('../includes/submaps-footer.php'); ?>
-</body>
+                </div>
+            </div>
+        </main>
+    <?php include('../includes/submaps-footer.php'); ?>
+    </body>
 </html>
